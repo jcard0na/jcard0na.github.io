@@ -12,8 +12,8 @@ My goal of the day is to connect an ESP8266 to parse.com
 ## Preparation
 
 1. Install the [Arduino IDE](https://www.arduino.cc/en/Main/Software) (I used version 1.6.6)
-2. ```Arduino->Preferences->Additional Boards Manager URLs: http://arduino.esp8266.com/staging/package_esp8266com_index.json```
 
+2. ```Arduino->Preferences->Additional Boards Manager URLs: http://arduino.esp8266.com/staging/package_esp8266com_index.json```
 ![boards-manager-image]({{ site.baseurl }}/images/2015-11-12-screenshot.png)
 
 3. Try to run the HTTPSRequest example under ```~/Library/Arduino15/packages/esp8266/hardware/esp8266/1.6.5-1160-gef26c5f/libraries/ESP8266WiFi/examples/HTTPSRequest```
