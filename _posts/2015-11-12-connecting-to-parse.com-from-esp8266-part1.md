@@ -3,15 +3,16 @@ layout: post
 title: Connecting to parse.com with ESP8266 - Part 1
 ---
 
+My goal of the day is to connect an ESP8266 to parse.com
+
 ## Ingredients
 
-1. An ESP8266 board (I used [this one](http://www.adafruit.com/product/2471)
+1. An ESP8266 board (I used [this one](http://www.adafruit.com/product/2471))
 
 ## Preparation
 
 1. Install the [Arduino IDE](https://www.arduino.cc/en/Main/Software) (I used version 1.6.6)
 2. ```Arduino->Preferences->Additional Boards Manager URLs: http://arduino.esp8266.com/staging/package_esp8266com_index.json```
-
 
 ![boards-manager-image]({{ site.baseurl }}/images/2015-11-12-screenshot.png)
 
@@ -46,5 +47,5 @@ are talking to the parse.com servers.
 ## References
 
 [1](https://github.com/esp8266/Arduino/issues/43)
-[2](https://github.com/esp8266/Arduino/issues/824]
+[2](https://github.com/esp8266/Arduino/issues/824)
 
