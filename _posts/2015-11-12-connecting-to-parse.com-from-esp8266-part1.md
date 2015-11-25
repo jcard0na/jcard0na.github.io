@@ -28,18 +28,17 @@ under your ```Arduino/hardware``` directory (i.e. the Arduino sketchbook
 location you set via Arduino-&gt;Preferences). You might need to create the
 hardware directory first.
 
-5. Restart Arduino and try again running the HTTPSRequest example from step 3.  This worked for me.  The version of esp8266/Arduino.git I used is: ```git rev-parse HEAD:
-3c14656a26a094ea5640a7114741193dc1505e4a
+5. Restart Arduino and try again running the HTTPSRequest example from step 3.  This worked for me.  The version of esp8266/Arduino.git I used is: ```git rev-parse HEAD: 3c14656a26a094ea5640a7114741193dc1505e4a```
 
 6. Change the HTTPSRequest example to connect to parse.
 
-```diff
+~~~~~~~~~c
 - const char* host = "api.github.com";
 + const char* host = "api.parse.com";
 (...)
 - String url = "/repos/esp8266/Arduino/commits/esp8266/status"
 + String url = "/1/classes/GameScore"
-```
+~~~~~~~~~
 
 and run the sketch.  If you see an "unauthorized" response, that is good: you
 are talking to the parse.com servers.
