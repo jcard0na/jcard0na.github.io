@@ -1,17 +1,12 @@
 #! /bin/bash
 
-for i in `seq 10`
-do
-	FILENAME=`date +'%Y-%m-%d'`-${i}.md
-	[ -f $FILENAME ] && continue
-	[ $i -eq 10 ] && exit -1
-	break
-done
+FILENAME=`date +'%Y-%m-%d'`-${1}.md
+[ -f $FILENAME ] && exit -1
 
 cat > $FILENAME <<HERE
 ---
 layout: post
-title: 
+title: ${1//-/ }
 ---
 HERE
 
