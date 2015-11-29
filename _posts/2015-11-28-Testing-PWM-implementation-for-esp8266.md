@@ -73,11 +73,12 @@ test was running.
 2. When setting the duty cycle to 100%, the output is not truly 100% (i.e. constant high) but rather 99.65%
    I would also suggest to detect that scenario in ```pwm_set_duty()``` and set the output
    to constant high.
+        ![]({{ site.baseurl }}/images/99.65duty.png)
+
 3. The library/target does not work at high frequencies. When setting the
    frequency to 50kHz the observed output is 40kHz.
 4. Every change of duty cycle resets the output to HIGH.  This might introduce
    glitches in applications where the duty cycle changes frequently (e.g. audio)
 
-![]({{ site.baseurl }}/images/99.65duty.png)
 
 
