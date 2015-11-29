@@ -61,8 +61,8 @@ void user_init(void)
 And two snapshots from GPIO14 taken with the logic analyzer while the above
 test was running.
 
-![]({{ site.baseurl }}/images/6.25duty.png)
-![]({{ site.baseurl }}/images/68.65duty.png)
+--------------------------|-----------------------------------
+![]({{ site.baseurl }}/images/6.25duty.png) | ![]({{ site.baseurl }}/images/68.65duty.png)
 
 ### Issues
 
