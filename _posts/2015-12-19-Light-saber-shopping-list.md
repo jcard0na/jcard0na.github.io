@@ -3,8 +3,8 @@ layout: post
 title: Light saber shopping list
 ---
 
-Description               |   Where to buy
-:-------------------------:|:-------------------------:
+*Description*               |   *Where to buy*
+:-------------------------|:------------------------- 
 1.2m Polycarbonate Tubing, 3/4" ID x 1" OD x 1/8" Wall, Clear Color | [amazon](https://www.amazon.com/dp/B000OMJ4VU)
 1m of NeoPixel LED strip (30 per meter) | [adafruit](https://www.adafruit.com/products/1460)
 3V Trinket Pro microcontroller | [adafruit](https://www.adafruit.com/products/2010)
