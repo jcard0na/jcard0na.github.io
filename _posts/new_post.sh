@@ -11,4 +11,5 @@ title: ${1//-/ }
 ---
 HERE
 
+git add $FILENAME
 exec vim $FILENAME
