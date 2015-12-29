@@ -25,8 +25,8 @@ The steps I followed below:
 
 <script src="http://vjs.zencdn.net/4.0/video.js"></script>
 
-<video id="jq6500" class="video-js vjs-default-skin" controls
-preload="auto" width="320" poster="{{ site.baseurl }}/images/jq6500.jpg"
-data-setup="{}">
+<div>
+<video id="jq6500" class="video-js vjs-default-skin" controls preload="auto" width="320" poster="{{ site.baseurl }}/images/jq6500.jpg" data-setup="{}">
 <source src="{{ site.baseurl }}/images/jq6500.mp4" type='video/mp4'>
 </video>
+</div>
