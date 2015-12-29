@@ -23,7 +23,7 @@ The steps I followed below:
   ![]({{ site.baseurl }}/images/jq6500-done.png)
 7. Now wire it up, and test.  The [datasheet]({{ site.baseurl }}/images/JQ6500%20voice%20Module.pdf) was very useful.
 
-<script src="http://vjs.zencdn.net/4.0/video.js"></script>
+<script src="http://vjs.zencdn.net/5.4.4/video.js"></script>
 
 <div>
 <video id="jq6500" class="video-js vjs-default-skin" controls preload="auto" width="320" height="240" poster="{{ site.baseurl }}/images/jq6500.jpg" data-setup="{}">
