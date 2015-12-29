@@ -20,7 +20,7 @@ The steps I followed below:
 4. A new CD drive will show up in the file explorer.
 5. Execute the program 'MusicDownload' that you will find on that drive.
 6. It is all in Chinese, but first select the second tab, and pick your MP3 files.  Then select the first tab to upload them.  
-  ![](images/jq6500-done.png)
+  ![]({{ site.baseurl }}/images/jq6500-done.png)
 7. Now wire it up, and test.  The [datasheet]({{ site.baseurl }}/images/JQ6500%20voice%20Module.pdf) was very useful.
 
 <script src="http://vjs.zencdn.net/4.0/video.js"></script>
