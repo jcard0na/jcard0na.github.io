@@ -21,12 +21,12 @@ The steps I followed below:
 5. Execute the program 'MusicDownload' that you will find on that drive.
 6. It is all in Chinese, but first select the second tab, and pick your MP3 files.  Then select the first tab to upload them.  
   ![](images/jq6500-done.png)
-7. Now wire it up, and test.  The [datasheet]({{ site.baseurl }}/images/JQ6500%20;voice%20;Module.pdf) was very useful.
+7. Now wire it up, and test.  The [datasheet]({{ site.baseurl }}/images/JQ6500%20voice%20Module.pdf) was very useful.
 
 <script src="http://vjs.zencdn.net/4.0/video.js"></script>
 
 <video id="jq6500" class="video-js vjs-default-skin" controls
-preload="auto" width="683" height="384" poster="{{ site.baseurl }}/images/jq6500.jpg"
+preload="auto" width="320" poster="{{ site.baseurl }}/images/jq6500.jpg"
 data-setup="{}">
 <source src="{{ site.baseurl }}/images/jq6500.mp4" type='video/mp4'>
 </video>
