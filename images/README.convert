@@ -8,7 +8,7 @@ ffmpeg -i jq6500.mov -acodec copy -vcodec copy jq6500.mp4
 ffmpeg -i jq6500.mov -acodec copy -vf rotate=3*PI/2 jq6500.mp4
 
 ## Same with rescaling
-ffmpeg -i jq6500.mov -acodec copy -vf scale=320:240 jq6500.mp4
+ffmpeg -i jq6500.mov -acodec copy -vf scale=640:360 jq6500.mp4
 
 ## Extract a screenshot, 5 seconds into video
 
