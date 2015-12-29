@@ -22,11 +22,7 @@ The steps I followed below:
 6. It is all in Chinese, but first select the second tab, and pick your MP3 files.  Then select the first tab to upload them.  
   ![]({{ site.baseurl }}/images/jq6500-done.png)
 7. Now wire it up, and test.  The [datasheet]({{ site.baseurl }}/images/JQ6500%20voice%20Module.pdf) was very useful.
-
-<script src="http://vjs.zencdn.net/5.4.4/video.js"></script>
-
-<div>
-<video id="jq6500" class="video-js vjs-default-skin" controls preload="auto" width="320" height="240" poster="{{ site.baseurl }}/images/jq6500.jpg" data-setup="{}">
-<source src="{{ site.baseurl }}/images/jq6500.mp4" type='video/mp4'>
-</video>
-</div>
+  <script src="http://vjs.zencdn.net/5.4.4/video.js"></script>
+  <video id="jq6500" class="video-js vjs-default-skin" controls preload="auto" width="320" height="240" poster="{{ site.baseurl }}/images/jq6500.jpg" data-setup="{}">
+  <source src="{{ site.baseurl }}/images/jq6500.mp4" type='video/mp4'>
+  </video>
