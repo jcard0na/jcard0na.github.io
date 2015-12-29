@@ -1,0 +1,9 @@
+
+## Mov to mpeg4
+
+ffmpeg -i jq6500.mov -acodec copy -vcodec copy jq6500.mp4
+
+## Same, also with rotation, 270 degrees clockwise
+
+ffmpeg -i jq6500.mov -acodec copy -vf rotate=3*PI/2 jq6500.mp4
+
