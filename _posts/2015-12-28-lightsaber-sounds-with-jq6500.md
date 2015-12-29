@@ -26,7 +26,7 @@ The steps I followed below:
 <script src="http://vjs.zencdn.net/4.0/video.js"></script>
 
 <video id="jq6500" class="video-js vjs-default-skin" controls
-preload="auto" width="683" height="384" poster="/static/screencasts/pelican-installation.png"
+preload="auto" width="683" height="384" poster="{{ site.baseurl }}/images/jq6500.jpg"
 data-setup="{}">
-<source src="{{ site.baseurl }}/images/jq6500.m44" type='video/mp4'>
+<source src="{{ site.baseurl }}/images/jq6500.mp4" type='video/mp4'>
 </video>

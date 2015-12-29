@@ -7,3 +7,6 @@ ffmpeg -i jq6500.mov -acodec copy -vcodec copy jq6500.mp4
 
 ffmpeg -i jq6500.mov -acodec copy -vf rotate=3*PI/2 jq6500.mp4
 
+## Extract a screenshot, 5 seconds into video
+
+ffmpeg -ss 00:00:05 -i jq6500.mp4 -vframes 1 -q:v 2 jq6500.jpg
