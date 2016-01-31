@@ -21,14 +21,17 @@ these are the steps to do that.
     ![]({{ site.baseurl }}/images/mangoh-bottom-layer.png)
 
 3. On the WP shell, which is accessible via the on-board DB-9 serial connector or via ethernet<sup>[1](#myfootnote1)</sup>, you need to enable the uart.
-```
-microcon /dev/ttyAT
-AT!MAPUART=17,1
-OK
-```
+
+    ```bash
+    microcon /dev/ttyAT
+    AT!MAPUART=17,1
+    OK
+    ```
+
 And you are done.  To test...
 
 4. Write a character echo program such as:
+
     ```bash
     #! /bin/sh
 
@@ -41,10 +44,11 @@ And you are done.  To test...
         echo $X > /dev/ttyHSL0
     done < /dev/ttyHSL0
     ```
+    and execute
 
-   and execute
-
-  ./echo_data.sh
+    ```bash
+    ./echo_data.sh
+    ```
 
 5. And program the Arduino to bridge the USB serial consosole to the UART port
 
