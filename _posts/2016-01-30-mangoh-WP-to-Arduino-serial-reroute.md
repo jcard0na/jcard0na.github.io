@@ -5,18 +5,19 @@ title: mangoh WP to Arduino serial reroute
 
 The [mangoh dev platform](http://mangoh.io) has an Arduino Leonardo connected
 to a WP module.  The default configuration has the two connected via
-WP:USB-FTDI-Arduino:UART.  I wanted to connect UART-to-UART, and these are the
-steps to do that.
+```WP:USB <-> FTDI <-> Arduino:UART```.  I wanted to connect UART-to-UART, and
+these are the steps to do that.
 
 1. There is an analog switch that needs to be rerouted.
 
-!()[{{ site.baseurl }}/images/wp-mangoh-sch1.png]
+![]({{ site.baseurl }}/images/wp-mangoh-sch1.png)
 
 2. The FTDI chip needs to be tri-stated to avoid pulling up the RX line
 
-!()[{{ site.baseurl }}/images/wp-mangoh-sch2.png]
+![]({{ site.baseurl }}/images/wp-mangoh-sch2.png)
 
-3. On the WP shell, which is accessible via the on-board DB-9 serial connector or via ethernet[<sup>1</sup>][1], you need to enable the uart.
+3. On the WP shell, which is accessible via the on-board DB-9 serial connector or via ethernet<sup>[1](#myfootnote1)</sup>, you need to enable the uart.
+
 
 ```
 microcon /dev/ttyAT
@@ -75,5 +76,6 @@ void loop() {
 
 6. Now fire up the Arduino terminal and you should see characters echoed back to you.
 
-!()[mangoh-arduino.png]
+![]({{ site.baseurl }}/images/mangoh-arduino.png)
 
+<a name="myfootnote1">1</a>: A gotcha using Ethernet: the WP is configured with DHCP, but it will choose a random mac after each reboot.  So you will have to find its IP address on every reboot until you disable that behavior (which I don't know how to do).
