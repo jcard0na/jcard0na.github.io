@@ -16,6 +16,10 @@ these are the steps to do that.
 
 ![]({{ site.baseurl }}/images/wp-mangoh-sch2.png)
 
+The purple circles show the location of those shorts on the bottom layer of the mangoh's solder mask gerber.
+
+![]({{ site.baseurl }}/images/mangoh-bottom-layer.png)
+
 3. On the WP shell, which is accessible via the on-board DB-9 serial connector or via ethernet<sup>[1](#myfootnote1)</sup>, you need to enable the uart.
 
 
