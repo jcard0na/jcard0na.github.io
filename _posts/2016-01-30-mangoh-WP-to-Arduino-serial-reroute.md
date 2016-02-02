@@ -31,7 +31,6 @@ these are the steps to do that.
 And you are done.  To test...
 
 4. Write a character echo program such as:
-
     ```bash
     #! /bin/sh
 
@@ -44,15 +43,12 @@ And you are done.  To test...
         echo $X > /dev/ttyHSL0
     done < /dev/ttyHSL0
     ```
-
     and execute
-
     ```bash
     ./echo_data.sh
     ```
 
 5. And program the Arduino to bridge the USB serial consosole to the UART port
-
     ```c
     void setup() {
       Serial1.begin(115200);
