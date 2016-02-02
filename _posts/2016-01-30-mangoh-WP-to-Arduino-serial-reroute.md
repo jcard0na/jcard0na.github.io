@@ -82,5 +82,4 @@ And you are done.  To test...
 
     ![]({{ site.baseurl }}/images/mangoh-arduino.png)
 
-
 <a name="myfootnote1">1</a>:  A gotcha using Ethernet: the WP is configured with DHCP, but it will choose a random mac address after each reboot.  So you will have to find its IP address on every reboot until you disable that behavior (which I don't know how to do).
