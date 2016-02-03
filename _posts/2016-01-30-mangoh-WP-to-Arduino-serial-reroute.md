@@ -22,15 +22,16 @@ these are the steps to do that.
 
 3. On the WP shell, which is accessible via the on-board DB-9 serial connector or via ethernet<sup>[1](#myfootnote1)</sup>, you need to enable the uart.
 
-    ```bash
-    microcon /dev/ttyAT
-    AT!MAPUART=17,1
-    OK
-    ```
+```bash
+microcon /dev/ttyAT
+AT!MAPUART=17,1
+OK
+```
 
 And you are done.  To test...
 
 4. Write a character echo program such as:
+
 ```bash
 #! /bin/sh
 
@@ -51,6 +52,7 @@ and execute
 ```
 
 5. And program the Arduino to bridge the USB serial consosole to the UART port
+
 ```c
 void setup() {
   Serial1.begin(115200);
