@@ -22,61 +22,61 @@ these are the steps to do that.
 
 3. On the WP shell, which is accessible via the on-board DB-9 serial connector or via ethernet<sup>[1](#myfootnote1)</sup>, you need to enable the uart.
 
-```bash
-microcon /dev/ttyAT
-AT!MAPUART=17,1
-OK
-```
+    ```bash
+    microcon /dev/ttyAT
+    AT!MAPUART=17,1
+    OK
+    ```
 
 And you are done.  To test...
 
 4. Write a character echo program such as:
 
-```bash
-#! /bin/sh
-
-stty -F /dev/ttyHSL0 115200
-stty -F /dev/ttyHSL0 -echo
-
-while read X
-do
-    echo Got: $X, echoing back $X
-    echo $X > /dev/ttyHSL0
-done < /dev/ttyHSL0
-```
+    ```bash
+    #! /bin/sh
+    
+    stty -F /dev/ttyHSL0 115200
+    stty -F /dev/ttyHSL0 -echo
+    
+    while read X
+    do
+        echo Got: $X, echoing back $X
+        echo $X > /dev/ttyHSL0
+    done < /dev/ttyHSL0
+    ```
 
 and execute
 
-```bash
-./echo_data.sh
-```
+    ```bash
+    ./echo_data.sh
+    ```
 
 5. And program the Arduino to bridge the USB serial consosole to the UART port
 
-```c
-void setup() {
-  Serial1.begin(115200);
-}
+    ```c
+    void setup() {
+       Serial1.begin(115200);
+    }
 
-void loop() {
-  char oneChar;
+    void loop() {
+       char oneChar;
   
-  while (Serial.available() > 0) {
+        while (Serial.available() > 0) {
                 // read the incoming byte:
                 oneChar = Serial.read();
                 Serial1.print(oneChar);
-  }
+        }
     
-  while (Serial1.available() > 0) {
+        while (Serial1.available() > 0) {
                 // read the incoming byte:
                 oneChar = Serial1.read();
 
                 // print locally what you got
                 Serial.print(oneChar);
-  }
-  delay(1000);
-}
-```
+        }
+      delay(1000);
+    }
+    ```
 
 6. Now fire up the Arduino terminal and you should see characters echoed back to you.
 
