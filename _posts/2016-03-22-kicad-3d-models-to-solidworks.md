@@ -4,18 +4,18 @@ title: kicad 3d models to solidworks
 ---
 
 If you use kicad's 3d viewer you may already know that it cannot export models
-into a format useable by mechanical engineers.  There is a (tool out there)
-[http://sourceforge.net/projects/kicadstepup/] that apparently fixes this via a
-macro for FreeCAD.  The tool works well, but the documentation is horrible.  My
-friend Kyle Manna took the time and effort to figure out how the script works
-and yesterday was teaching me how to use it.
+into a format useable by mechanical engineers.  There is a [tool out there](https://sourceforge.net/projects/kicadstepup/) 
+that apparently fixes this via a macro for FreeCAD.  The tool works well, but
+the documentation is horrible.  My friend [Kyle Manna](https://about.me/manna)
+took the time and effort to figure out how the script works and yesterday was
+teaching me how to use it.
 
 It turns out it's not that hard.  Here is the recipe:
 
 
 ## Setup
 
-1. Download (kicad stepup) [http://sourceforge.net/projects/kicadstepup/]
+1. Download [kicad stepup](https://sourceforge.net/projects/kicadstepup/)
 2. With FreeCad, create a blank project, and load the macro ```kicad-StepUp-tools.FCMacro```
 
 ![kicad-image]({{ site.baseurl }}/images/kicad-stepup.png)
@@ -46,5 +46,3 @@ It turns out it's not that hard.  Here is the recipe:
    the 3d view of your board starts to appear on the screen.  All components
    for which you have generated a 3d model with step up should be populated.  A
    step model is now generated that you can hand out to your mechanical engineer.
-
-
