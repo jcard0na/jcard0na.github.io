@@ -46,3 +46,6 @@ It turns out it's not that hard.  Here is the recipe:
    the 3d view of your board starts to appear on the screen.  All components
    for which you have generated a 3d model with step up should be populated.  A
    step model is now generated that you can hand out to your mechanical engineer.
+
+
+![jst-image]({{ site.baseurl }}/images/jst-stepup.png)
