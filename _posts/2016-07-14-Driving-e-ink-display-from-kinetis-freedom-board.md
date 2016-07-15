@@ -18,13 +18,12 @@ J2-2  | PTA13 | GPIO OUT   | 4 | RESET
 J2-4  | PTD2  | GPIO OUT   | 5 | D/C 
 J2-6  | PTD4  | SSPI1 SS   | 6 | CS1 
 J2-8  | PTD6  | SPI1 MOSI  | 8 | SDI 
-J2-10 | PTD7  | SPI1 MISO  | N/C | - 
+J2-10 | PTD7  | SPI1 MISO  | 16| V3.3 
 J2-12 | PTD5  | SPI1 CLK   | 7 | SCLK 
 J2-14 | GND   |     -      | 18 | GND 
 J2-16 | N/C   |     -      | - | Reset
 J2-18 | PTE0  | GPIO IN    | 3 | BUSY
-J2-20 | PTE1   |     -      | - | -
-J3-3  | V3.3  |     -      | 16 | V3.3
+J2-20 | PTE1  |     -      | - | -
 
 Also, short BS1 to ground on the adapter, by shorting positions 1 with 17 on
 the jumper.  This will select the more efficient 4-wire spi interface.
