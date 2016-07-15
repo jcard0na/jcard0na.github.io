@@ -18,7 +18,7 @@ J2-2  | PTA13 | GPIO OUT   | 4 | RESET
 J2-4  | PTD2  | GPIO OUT   | 5 | D/C 
 J2-6  | PTD4  | SSPI1 SS   | 6 | CS1 
 J2-8  | PTD6  | SPI1 MOSI  | 8 | SDI 
-J2-10 | PTD7  | SPI1 MISO  | 16| V3.3 
+J2-10 | PTD7  | GPIO OUT   | 16| V3.3 
 J2-12 | PTD5  | SPI1 CLK   | 7 | SCLK 
 J2-14 | GND   |     -      | 18 | GND 
 J2-16 | N/C   |     -      | - | Reset
@@ -29,4 +29,9 @@ Also, short BS1 to ground on the adapter, by shorting positions 1 with 17 on
 the jumper.  This will select the more efficient 4-wire spi interface.
 Alternatively you could use PTE1 (J2-20) to make that option selectable.
 
-On to coding.
+The pinout has been chosen so that we can use the hw-accelerated spi functions.
+But the current version of the code is just bit-banging in software.  So the
+SPI pins are actually configured as gpio outputs.
+
+<img src="{{ site.baseurl }}/images/IMG_0728.JPG" width="350"> 
+
