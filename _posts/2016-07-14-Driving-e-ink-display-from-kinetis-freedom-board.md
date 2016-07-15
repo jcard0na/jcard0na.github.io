@@ -12,7 +12,7 @@ the voltage pump logic recommended by the vendor.
 
 This is how I connected the adapter board to the freedom board.  You will find the supporting documentation [here](https://github.com/jcard0na/e-ink-with-kinetis/tree/master/docs).
 
-*FRDM BRD pin*|  *MCU function* | *Function* | *Breakout board pin*
+*Board pin*|  *MCU pin* | *MCU Function* | *Breakout board pin*
 :-------------|:-------------:|:----------:|:-------------------|
 J2-2  | PTA13 | GPIO OUT   | 4 | RESET
 J2-4  | PTD2  | GPIO OUT   | 5 | D/C 
