@@ -40,9 +40,11 @@ It turns out it's not that hard.  Here is the recipe:
    Zero all rotations, offsets.  One all scaling.  Confirm that footprint
    and 3D model are aligned in the 3d view.
 
+8. Export IDFv3 file format (File -> Export -> IDFv3...)
+
 ## On Freecad
 
-8. Open 'Load kicad board *.kicad_pcb'.  If all goes well, you should see how
+9. Open 'Load kicad board with IDF *.emn'.  If all goes well, you should see how
    the 3d view of your board starts to appear on the screen.  All components
    for which you have generated a 3d model with step up should be populated.  A
    step model is now generated that you can hand out to your mechanical engineer.
