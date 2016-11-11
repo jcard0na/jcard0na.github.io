@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recover from kinetis in secured state.md
+title: Recover from kinetis in secured state
 ---
 
 When using openocd and kinetis-FRDM board as debugger, you might encounter this
@@ -37,28 +37,28 @@ systemctl --user disable openocd-cmsis-dap.service
 1. Attach the USB cable to the OpenSDA USB port.
 
 2. Open a `telnet` session to openocd and issue the following commands
-```
-> reset_config srst_only
-srst_only separate srst_nogate srst_open_drain connect_deassert_srst
-```
-```
-> reset halt                                  
-*********** ATTENTION! ATTENTION! ATTENTION! ATTENTION! **********
-****                                                          ****
-**** Your Kinetis MCU is in secured state, which means that,  ****
-**** with exception for very basic communication, JTAG/SWD    ****
-**** interface will NOT work. In order to restore its         ****
-**** functionality please issue 'kinetis mdm mass_erase'      ****
-**** command, power cycle the MCU and restart OpenOCD.        ****
-****                                                          ****
-*********** ATTENTION! ATTENTION! ATTENTION! ATTENTION! **********
-target state: halted
-target halted due to debug-request, current mode: Thread 
-xPSR: 0x01000000 pc: 0xfffffffe msp: 0xfffffffc
-```
-```
-> kinetis mdm mass_erase
-```
+    ```
+    > reset_config srst_only
+    srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+    ```
+    ```
+    > reset halt                                  
+    *********** ATTENTION! ATTENTION! ATTENTION! ATTENTION! **********
+    ****                                                          ****
+    **** Your Kinetis MCU is in secured state, which means that,  ****
+    **** with exception for very basic communication, JTAG/SWD    ****
+    **** interface will NOT work. In order to restore its         ****
+    **** functionality please issue 'kinetis mdm mass_erase'      ****
+    **** command, power cycle the MCU and restart OpenOCD.        ****
+    ****                                                          ****
+    *********** ATTENTION! ATTENTION! ATTENTION! ATTENTION! **********
+    target state: halted
+    target halted due to debug-request, current mode: Thread 
+    xPSR: 0x01000000 pc: 0xfffffffe msp: 0xfffffffc
+    ```
+    ```
+    > kinetis mdm mass_erase
+    ```
 
 The reset line should now be off. And it isn't...
 
