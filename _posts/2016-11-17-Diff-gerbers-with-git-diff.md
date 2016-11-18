@@ -3,7 +3,7 @@ layout: post
 title: Diff gerbers with git diff
 ---
 
-Do you want to have git show you what changed on your gerbers?  My friend (Jason)[http://www.jasonabeleconsulting.com/] shared his setup with me.
+Do you want to have git show you what changed on your gerbers?  My friend [Jason](http://www.jasonabeleconsulting.com/) shared his setup with me.
 
 1. Tell git to use gerbv for diffs
 
