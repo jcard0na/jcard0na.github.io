@@ -41,6 +41,12 @@ These are the steps that ended up working for me.
     remove the `INSERT` attribute on `DNF` components or else they will appear
     in your Position File.
 
+    Note: Make sure you have not moved your origin point for gerbers and
+    positioning away from the default (0,0) or else your parts will be
+    [floating in space](https://support.pcb.ng/support/solutions/articles/9000101344-parts-floating-in-space-can-t-find-parts-in-placement-window).
+    In Kicad, this can be moved via the "Bullseye-on-axis" tool on the right
+    tool menu (tooltip: "Place the origin point...").
+
  8. Upload that file as a `Pick and Place` file and confirm that the placement
     information is all correct in the `Placement` tab.  All parts should appear
     as `Placed but unconfirmed`.  If some show as not placed, check that the
