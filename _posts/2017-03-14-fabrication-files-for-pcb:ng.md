@@ -37,9 +37,9 @@ These are the steps that ended up working for me.
  6. Map the `Identifier` (->`References`), `Manufacturer Part Number` (->`MPN`) and `Digikey-SKU` (->`DISTPN`) fields.
 
  7. Generate Position File from Kicad/Pcbnew (File -> Fabrication Outputs)
-    -> Footprint Position) with one file per board.  Make sure you remove the
-    `INSERT` attribute on `DNF` components or else they will appear in your
-    Position File.
+    -> Footprint Position) with one file per board, *in inches*.  Make sure you
+    remove the `INSERT` attribute on `DNF` components or else they will appear
+    in your Position File.
 
  8. Upload that file as a `Pick and Place` file and confirm that the placement
     information is all correct in the `Placement` tab.  All parts should appear
