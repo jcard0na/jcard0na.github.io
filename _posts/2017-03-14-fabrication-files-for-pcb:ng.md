@@ -37,7 +37,7 @@ These are the steps that ended up working for me.
  6. Map the `Identifier` (->`References`), `Manufacturer Part Number` (->`MPN`) and `Digikey-SKU` (->`DISTPN`) fields.
 
  7. Generate Position File from Kicad/Pcbnew (File -> Fabrication Outputs)
-    -> Footprint Position) with one file per board, *in inches*.  Make sure you
+    -> Footprint Position) with one file per board.  Make sure you
     remove the `INSERT` attribute on `DNF` components or else they will appear
     in your Position File.
 
