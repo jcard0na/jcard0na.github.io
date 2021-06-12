@@ -7,3 +7,6 @@ _site
 Gemfile.lock
 node_modules
 package.json
+vendor
+.jekyll-cache
+
